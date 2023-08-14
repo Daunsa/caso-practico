@@ -3,11 +3,13 @@ import logo from './logo.svg';
 import './App.css';
 
 import Navbar from './Navbar/Navbar';
+import Bar from './Lateral/Bar';
 
 function App() {
   return (
-    <div >
+    <div className='flex flex-col min-h-screen'>
       <Navbar />
+      <Bar />
     </div>
   );
 }
