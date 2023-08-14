@@ -3,12 +3,15 @@ import Card from './Card';
 import Loading from './Loading';
 import Failed from './Failed';
 import axios from 'axios';
+import Detail from '../Detail/Detail';
+import { CardClickHandler } from '../types';
 
 const Bar: React.FC = () => {
 
     const [state, setState] = useState(0);
     const [data, setdata] = useState<any[]>([]);
     const [nextPage, setNextPage] = useState(null);
+    const [selectedCharacter, setSelectedCharacter] = useState(null);
 
     const fetchCharacters = (url: string) => {
         axios.get(url)
@@ -43,17 +46,26 @@ const Bar: React.FC = () => {
         }
     };
 
+    const handleCardClick: CardClickHandler = (index) => {
+        const clickedCharacter = data[index];
+        setSelectedCharacter(clickedCharacter);
+        console.log('personaje:', clickedCharacter);
+      };
+
     return (
-        <div onScroll={handleScroll} className="flex-grow overflow-y-auto bg-white w-96 border-r border-gray-400">
-            <Card data={data} />
-            {state === 0 ?
-                <Loading />
-                :
-                state === 1 ?
-                    <Failed />
+        <div className='flex flex-grow'>
+            <div onScroll={handleScroll} className="overflow-y-auto bg-white w-96 border-r border-gray-400 max-h-[calc(100vh-64px)]">
+                <Card data={data} onCardClick={handleCardClick} />
+                {state === 0 ?
+                    <Loading />
                     :
-                    <></>
-            }
+                    state === 1 ?
+                        <Failed />
+                        :
+                        <></>
+                }
+            </div>
+            <Detail />
         </div>
     );
 };

@@ -6,7 +6,7 @@ import Bar from './Lateral/Bar';
 
 function App() {
   return (
-    <div className='flex flex-col h-screen'>
+    <div className='flex flex-col max-h-screen'>
       <Navbar />
       <Bar />
     </div>
