@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+# Capturas de funcionalidad
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Pc carga](https://i.imgur.com/WrhlOJD.png)
+![Pc listado](https://i.imgur.com/Lajfduc.png)
+![Pc detalle](https://i.imgur.com/k65Tgma.png)
+![Celular carga](https://i.imgur.com/4I0NTLm.png)
+![Celular listado](https://i.imgur.com/xTz8kJJ.png)
+![Celular detalle](https://i.imgur.com/xNbgJ2I.png)
+
 
 ## Available Scripts
 
