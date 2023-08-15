@@ -1,4 +1,4 @@
-# Capturas de funcionalidad
+# Capturas de funcionalidad - [demo](https://daunsa.github.io/caso-practico/)
 
 ![Pc carga](https://i.imgur.com/WrhlOJD.png)
 ![Pc listado](https://i.imgur.com/Lajfduc.png)
