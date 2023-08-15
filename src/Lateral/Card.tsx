@@ -51,7 +51,7 @@ const Card: React.FC<CardProps> = ({ data, onCardClick }) => {
                 fetchSpecies(character.species[0]);
             }
         });
-    }, [data, planetCache, speciesCache]);
+    }, [data]);
 
     return (
         <>
@@ -61,8 +61,8 @@ const Card: React.FC<CardProps> = ({ data, onCardClick }) => {
                 return (
                     <div key={index} className="ml-4 border-b border-gray-400 py-4 flex">
                         <div className="flex-grow">
-                            <h2 className="text-xl font-semibold">{character.name}</h2>
-                            <p className="text-sm">{speciesData ? speciesData.name : 'unknown'} from{' '}
+                            <h2 className="text-xl font-bold">{character.name}</h2>
+                            <p className="text-sm text-gray-500">{speciesData ? speciesData.name : 'unknown'} from{' '}
                                 {planetData ? planetData.name : 'Loading planet...'}</p>
                         </div>
                         <div className="flex-none flex items-center">
