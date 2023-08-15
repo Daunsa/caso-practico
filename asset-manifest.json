@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/caso-practico/static/css/main.71f84065.css",
-    "main.js": "/caso-practico/static/js/main.dd8bdeff.js",
+    "main.js": "/caso-practico/static/js/main.d990a86b.js",
     "static/js/787.2a39812a.chunk.js": "/caso-practico/static/js/787.2a39812a.chunk.js",
     "index.html": "/caso-practico/index.html",
     "main.71f84065.css.map": "/caso-practico/static/css/main.71f84065.css.map",
-    "main.dd8bdeff.js.map": "/caso-practico/static/js/main.dd8bdeff.js.map",
+    "main.d990a86b.js.map": "/caso-practico/static/js/main.d990a86b.js.map",
     "787.2a39812a.chunk.js.map": "/caso-practico/static/js/787.2a39812a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.71f84065.css",
-    "static/js/main.dd8bdeff.js"
+    "static/js/main.d990a86b.js"
   ]
 }
