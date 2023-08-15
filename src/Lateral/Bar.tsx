@@ -68,7 +68,7 @@ const Bar: React.FC<BarProps> = ({ character, setCharacter, setName }) => {
 
     return (
         <div className='flex flex-grow'>
-            <div onScroll={handleScroll} className={`md:overflow-y-auto bg-white w-96 md:border-r border-gray-400 md:max-h-[calc(100vh-64px)] ${isMobile ? (character ? "hidden" : "") : ""}`}>
+            <div onScroll={handleScroll} className={`md:overflow-y-auto bg-white w-96 md:border-r border-neutral-400 md:max-h-[calc(100vh-64px)] ${isMobile ? (character ? "hidden" : "") : ""}`}>
                 <Card data={data} onCardClick={handleCardClick} />
                 {state === 0 ?
                     <Loading />

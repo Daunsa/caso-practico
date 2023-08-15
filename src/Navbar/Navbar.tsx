@@ -16,7 +16,7 @@ const Navbar: React.FC<NavbarProps> = ({ character, setCharacter, name, setName 
   }
 
   return (
-    <nav className="bg-black py-4 pl-8">
+    <nav className="bg-stone-950 py-4 pl-8">
       <div className="text-white font-bold hidden md:block">
         Ravn Star Wars Registry
       </div>

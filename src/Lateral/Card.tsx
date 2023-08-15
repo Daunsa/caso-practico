@@ -59,9 +59,9 @@ const Card: React.FC<CardProps> = ({ data, onCardClick }) => {
                 const speciesData = speciesCache[character.species[0]];
                 const planetData = planetCache[character.homeworld];
                 return (
-                    <div key={index} className="ml-4 border-b border-gray-400 py-4 flex">
+                    <div key={index} className="ml-4 border-b border-neutral-400 py-4 flex">
                         <div className="flex-grow">
-                            <h2 className="text-xl font-bold">{character.name}</h2>
+                            <h2 className="text-xl font-bold text-stone-950">{character.name}</h2>
                             <p className="text-sm text-gray-500">{speciesData ? speciesData.name : 'unknown'} from{' '}
                                 {planetData ? planetData.name : 'Loading planet...'}</p>
                         </div>

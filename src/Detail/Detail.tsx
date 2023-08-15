@@ -49,7 +49,7 @@ const Detail: React.FC<DetailProps> = ({ data }) => {
     return (
         <>
             {data !== null ?
-                <div className="py-4 md:px-40 md:w-full w-96">
+                <div className="py-4 md:px-40 pl-2 md:w-full w-96">
                     <div className="py-4">
                         <p className="font-bold">General information</p>
                         <table className="border-collapse border-gray-300 w-full table-auto">
